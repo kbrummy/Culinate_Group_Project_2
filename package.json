@@ -1,0 +1,23 @@
+{
+  "name": "project_2_untitled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianpraseuth/Project_2_Untitled.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianpraseuth/Project_2_Untitled/issues"
+  },
+  "homepage": "https://github.com/brianpraseuth/Project_2_Untitled#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5"
+  }
+}
