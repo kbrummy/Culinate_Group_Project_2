@@ -1,5 +1,5 @@
 {
-  "name": "project_2_untitled",
+  "name": "Project_2_Untitled",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/brianpraseuth/Project_2_Untitled.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/brianpraseuth/Project_2_Untitled#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1",
     "sequelize": "^6.3.5"
   }
 }
