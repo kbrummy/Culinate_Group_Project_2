@@ -8,8 +8,11 @@ USE user_posts_db;
 CREATE TABLE `posts` (
   `id` Int AUTO_INCREMENT NOT NULL,
   `username` VARCHAR( 255) NOT NULL,
-  `picture` VARBINARY(MAX) NOT NULL,
+  `imageSource` TEXT NOT NULL,
   `caption` TEXT NOT NULL,
 
   PRIMARY KEY ( `id` ) 
 );
+
+INSERT INTO posts (username, imageSource, caption)
+VALUES ("joesmith", "figure out way to add picture", "This is a test post");
