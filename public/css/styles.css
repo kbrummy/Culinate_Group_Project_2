@@ -1,8 +1,8 @@
-.bd-placeholder-img {
-  background-image: url(./cooking-pots.png);
+/* .bd-placeholder-img {
+  background-image: url(./assets/cooking-pots.png);
   font-size: 1.125rem;
   text-anchor: middle;
-}
+} */
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url(./cookBackground.jpg);
+  background-image: url(./assets/cookBackground.jpg);
 }
 
 .marketing {
@@ -33,10 +33,25 @@ body {
   font-size: 30px;
 }
 
+a:hover {
+  color: white;
+  opacity: 1;
+  font-size: 32px;
+}
+
+.active {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+
 img {
   border-radius: 55%;
 }
 
+.featurette {
+  align-items: center;
+}
 .highlight {
   margin-top: 30px;
   margin-left: 50px;
