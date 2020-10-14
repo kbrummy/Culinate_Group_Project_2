@@ -21,6 +21,16 @@ app.set("view engine", "handlebars");
 // Static directory
 app.use(express.static("public"));
 
+// Data
+var recipes = [
+    { entree: "vanilla", image: "imagelink", recipe: "blah blah blah" }
+  ];
+
+  app.get("/", function(req, res) {
+    res.render("recipes", { recipe : recipes });
+  });
+
+
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app);

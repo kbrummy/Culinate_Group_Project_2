@@ -14,7 +14,10 @@ module.exports = function(app) {
 
   // index route loads index.handlebars
   app.get("/", function(req, res) {
-    res.render("index", {})})
+    res.render("main", {})})
 
+
+  app.get("/recipe", function(req, res) {
+    res.render("recipe", {})})
 
 };

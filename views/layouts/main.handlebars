@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-		<title>Culinate</title>
-		  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-	<link href="stylesheets/style.css" rel="stylesheet">
-	
-	</head>
-	<body>
-		{{{ body }}}
+	<title>Culinate</title>
+	<!-- Bootstrap core CSS -->
+	<link href="../../public/css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+	<link href="../../public/css/styles.css" rel="stylesheet">
 
-				<h2>Search for a recipe:</h2>
-		<form>
-			<div class="form-group">
-				<label for="searchEntree">Search by word</label>
-				<input type="text">
-				<button type="submit" id="searchByWord" class="btn btn-primary">Submit</button>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-dark" id="navbar-btns">
+			<!-- navbar-text -->
+			<p class="navbar-brand">Culinate</p>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="recipes.html">Get cooking</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="feed.html">Feed</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="nailedit.html">Nailed it</a>
+					</li>
+				</ul>
 			</div>
-		</form>
+		</nav>
+	</header>
 
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="../../public/js/app.js"></script>
-	</body>
-</html>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Welcome to Culinate!</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{{ body }}}
+
+	<h2>Search for a recipe:</h2>
+	<form>
+		<div class="form-group">
+			<label for="searchEntree">Search by word</label>
+			<input id="searchedWord" type="text">
+			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+
+	<script src="../../public/js/app.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+		$("#submit").on("click", function(event) {
+		event.preventDefault();
+		var searched = document.getElementById("searchedWord").value;
+		console.log(searched);
+
+		var entreeQueryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searched;
+
+		$.ajax({
+			url: entreeQueryURL,
+			method: "GET"
+		}).then(function (response) {
+			console.log(response);
+		})
+
+		})
+	</script>
+
+</body>
