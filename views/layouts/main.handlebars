@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<title>Culinate</title>
 	<!-- Bootstrap core CSS -->
-	<link href="../../public/css/styles.css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-	<link href="../../public/css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../public/css/styles.css">
 
 </head>
 
@@ -21,15 +21,6 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
 						<a class="nav-link active" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="recipes.html">Get cooking</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="feed.html">Feed</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="nailedit.html">Nailed it</a>
 					</li>
 				</ul>
 			</div>
@@ -57,6 +48,13 @@
 		</div>
 	</form>
 
+	<div class="forecast mt-3">
+                    <div id="fiveDay">
+                        <h2>Recipes Found:</h2>
+						<p class="attachPlease"></p>
+                    </div>
+                </div>
+
 	<script src="../../public/js/app.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -72,11 +70,12 @@
 		$.ajax({
 			url: entreeQueryURL,
 			method: "GET"
-		}).then(function (response) {
+		}).then(function(response) {
 			console.log(response);
-		})
+			})
 
 		})
+
 	</script>
 
 </body>

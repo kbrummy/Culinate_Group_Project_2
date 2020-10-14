@@ -64,3 +64,11 @@ img {
 h2 {
   color: red;
 }
+
+.card {
+  background-color: rgb(197, 233, 255);
+  margin: 10px;
+  padding: 5px;
+  height: fit-content;
+  width: 125px;
+}
