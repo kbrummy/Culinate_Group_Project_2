@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var exphbs = require("express-handlebars");
+var path = require("path");
 
 // Sets up the Express App
 // =============================================================
@@ -19,7 +20,8 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static('public'));
+
 
 // Data
 var recipes = [
