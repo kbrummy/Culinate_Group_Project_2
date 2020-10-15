@@ -10,9 +10,9 @@
   }
 }
 
-body {
-  background-image: url(./assets/cookBackground.jpg);
-}
+/* body {
+  background-image: url("/public/images/cookBackground.jpg");
+} */
 
 .marketing {
   margin-top: 100px;
@@ -72,3 +72,4 @@ h2 {
   height: fit-content;
   width: 125px;
 }
+

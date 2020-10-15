@@ -8,8 +8,7 @@
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-	<link rel="stylesheet" href="../../public/css/styles.css">
-
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -54,28 +53,12 @@
 						<p class="attachPlease"></p>
                     </div>
                 </div>
+				
 
-	<script src="../../public/js/app.js"></script>
+	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
+	<script src="js/app.js"></script>
 
-		$("#submit").on("click", function(event) {
-		event.preventDefault();
-		var searched = document.getElementById("searchedWord").value;
-		console.log(searched);
-
-		var entreeQueryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searched;
-
-		$.ajax({
-			url: entreeQueryURL,
-			method: "GET"
-		}).then(function(response) {
-			console.log(response);
-			})
-
-		})
-
-	</script>
 
 </body>
