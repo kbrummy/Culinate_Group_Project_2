@@ -10,8 +10,8 @@
   }
 }
 
-/* body {
-  background-image: url("/public/images/cookBackground.jpg");
+/* html {
+  background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/157787/157787_00_2x.jpg");
 } */
 
 .marketing {
@@ -67,9 +67,11 @@ h2 {
 
 .card {
   background-color: rgb(197, 233, 255);
-  margin: 10px;
   padding: 5px;
   height: fit-content;
-  width: 125px;
+  width: fit-content;
 }
 
+.entreeImage {
+    width: 500px;
+}
