@@ -1,21 +1,20 @@
-/* .bd-placeholder-img {
-  background-image: url(./assets/cooking-pots.png);
-  font-size: 1.125rem;
-  text-anchor: middle;
-} */
-
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
 }
 
-/* body {
-  background-image: url("/public/images/cookBackground.jpg");
+<<<<<<< HEAD
+body {
+  background-image: url("../images/cookingBackground.jpg");
+=======
+/* html {
+  background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/157787/157787_00_2x.jpg");
 } */
 
 .marketing {
   margin-top: 100px;
+>>>>>>> e5af16636ff3c0eb3eab07a372ed56e16b81c9e5
 }
 
 .navbar {
@@ -45,13 +44,11 @@ a:hover {
   opacity: 1;
 }
 
-img {
-  border-radius: 55%;
+.jumbotron {
+  background-color: rgb(220, 245, 228, 0.5);
+  margin-bottom: 200px;
 }
 
-.featurette {
-  align-items: center;
-}
 .highlight {
   margin-top: 30px;
   margin-left: 50px;
@@ -61,15 +58,29 @@ img {
   background-color: #f9faf870;
 }
 
-h2 {
-  color: red;
+.searchForm {
+  text-align: center;
+}
+
+.searchText {
+  color: rgb(55, 38, 12);
+}
+
+#submit {
+  background-color: rgb(55, 38, 12);
+  color: white;
 }
 
 .card {
   background-color: rgb(197, 233, 255);
-  margin: 10px;
   padding: 5px;
   height: fit-content;
-  width: 125px;
+  width: fit-content;
 }
+<<<<<<< HEAD
+=======
 
+.entreeImage {
+    width: 500px;
+}
+>>>>>>> e5af16636ff3c0eb3eab07a372ed56e16b81c9e5

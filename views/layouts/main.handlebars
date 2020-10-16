@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Culinate</title>
 	<!-- Bootstrap core CSS -->
-	
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-dark" id="navbar-btns">
 			<!-- navbar-text -->
-			<p class="navbar-brand">Culinate</p>
+			<p class="navbar-brand text-center">Welcome to Culinate</p>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
@@ -26,36 +26,49 @@
 		</nav>
 	</header>
 
-	<div class="jumbotron">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1>Welcome to Culinate!</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+	{{!-- <div class="jumbotron">
+		<h1 class="nav-brand">Welcome to Culinate!</h1>
+		<p class="lead">This is a simple website to look up delicious recipes to cook.</p>
+		<hr class="my-4">
+		<p>Click on the button before to search for the perfect meal to make for yourself or you and a friend! If you
+			love it, save it for another time!</p>
+		<a class="nav-link active" href="#">Home</a>
+	</div> --}}
 
 	{{{ body }}}
 
-	<h2>Search for a recipe:</h2>
-	<form>
-		<div class="form-group">
-			<label for="searchEntree">Search by word</label>
-			<input id="searchedWord" type="text">
-			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
-		</div>
-	</form>
+	<figure class="highlight">
+		<div class="searchForm">
+			<h2 class="searchText">Search for a recipe:</h2>
+			<form>
+				<div class="form-group">
+					<label class="searchText" for="searchEntree">Search by word</label>
+					<input id="searchedWord" type="text">
+					<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
 
-	<div class="forecast mt-3">
-                    <div id="fiveDay">
+			<div class="forecast mt-3">
+				<div id="fiveDay">
+					<h2>Recipes Found:</h2>
+					<p class="attachPlease"></p>
+				</div>
+			</div>
+		</div>
+	</figure>
+
+
+<<<<<<< HEAD
+=======
+	<div class="container">
+                    <div id="recipeCards">
                         <h2>Recipes Found:</h2>
 						<p class="attachPlease"></p>
                     </div>
                 </div>
 				
+>>>>>>> e5af16636ff3c0eb3eab07a372ed56e16b81c9e5
 
-	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/app.js"></script>
