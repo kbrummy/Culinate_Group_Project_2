@@ -17,7 +17,7 @@ module.exports = function(app) {
     res.render("main", {})})
 
 
-  app.get("/recipe", function(req, res) {
-    res.render("recipe", {})})
+  app.get("/feed", function(req, res) {
+    res.render("feed", {})})
 
 };
