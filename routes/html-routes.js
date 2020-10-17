@@ -5,19 +5,24 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+const connection = require("../config/connection");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
-
-  // Each of the below routes just handles the HTML page that the user gets sent to.
-
   // index route loads index.handlebars
   app.get("/", function(req, res) {
-    res.render("main", {})})
+      res.render("index", {})
+    })
 
+    app.get("/feed", function(req, res) {
+      var dbQuery = "SELECT * FROM saved_recipes";
 
-  app.get("/feed", function(req, res) {
-    res.render("feed", {})})
-
-};
+      connection.query(dbQuery, function(err, result) {
+        if (err) throw err;
+        // res.json(result);
+        res.render("feed", {recipe: result})
+        console.log(result);
+      })
+    })
+  };

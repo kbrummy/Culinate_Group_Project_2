@@ -1,5 +1,25 @@
-{{#each recipe}}
-<p>Entree Name: {{entree}}</p>
-<p>Entree Image: {{image}}</p>
-<p>Recipe: {{recipe}}</p>
-{{/each}}
+	<div class="jumbotron">
+	    <div class="searchForm">
+	        <h1 class="nav-brand">Welcome to Culinate!</h1>
+	        <p class="lead">This is a simple website to look up delicious recipes to cook.</p>
+	        <hr class="my-4">
+	        <div class="">
+	            <div id="recipeCards">
+	                <h2>Recipes Saved:</h2>
+	                <div class="container">
+                        <div class="recipeColumn">
+                            <div class="card">
+                                <div class="card-content">
+                                    {{#each recipe}}
+	                                <h4>Entree Name: {{this.entreeName}}</h4>
+	                                <img>Entree Image: {{this.entreeImage}}
+	                                <p>Recipe: {{this.entreeRecipe}}</p>
+	                                {{/each}}
+                                </div>
+                            </div>
+                        </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>

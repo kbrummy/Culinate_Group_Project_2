@@ -1,5 +1,5 @@
 {
-  "name": "Project_2_Untitled",
+  "name": "Culinate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/brianpraseuth/Project_2_Untitled#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   }
 }

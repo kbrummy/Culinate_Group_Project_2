@@ -4,17 +4,12 @@
   }
 }
 
-<<<<<<< HEAD
 body {
   background-image: url("../images/cookingBackground.jpg");
-=======
-/* html {
-  background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/157787/157787_00_2x.jpg");
-} */
+}
 
 .marketing {
   margin-top: 100px;
->>>>>>> e5af16636ff3c0eb3eab07a372ed56e16b81c9e5
 }
 
 .navbar {
@@ -72,15 +67,16 @@ a:hover {
 }
 
 .card {
-  background-color: rgb(197, 233, 255);
+  background-color: whitesmoke;
   padding: 5px;
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  width: 80%;
+  font-size: smaller;
+  opacity: 90%;
+  margin-bottom: 5px;
 }
-<<<<<<< HEAD
-=======
 
 .entreeImage {
-    width: 500px;
+ max-height: 40%;
+ max-width: 40%;
 }
->>>>>>> e5af16636ff3c0eb3eab07a372ed56e16b81c9e5
